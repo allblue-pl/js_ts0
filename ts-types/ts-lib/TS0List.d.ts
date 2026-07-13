@@ -1,4 +1,4 @@
-export default class List<KeyType, ValueType> {
+export default class TS0List<KeyType, ValueType> {
     #private;
     get size(): number;
     constructor(iterable?: Array<[KeyType, ValueType]> | null);
@@ -19,7 +19,6 @@ export default class List<KeyType, ValueType> {
     remove(value: ValueType): void;
     set(key: KeyType, value: ValueType): void;
     setAt(index: number, key: KeyType, value: ValueType): void;
-    slice(): void;
     sort(compareFn: (a: {
         key: KeyType;
         value: ValueType;
@@ -27,13 +26,12 @@ export default class List<KeyType, ValueType> {
         key: KeyType;
         value: ValueType;
     }) => number): void;
-    values(): ValueType[];
+    values(): Array<ValueType>;
     _getIndexE(key: KeyType): number;
 }
 declare class ListIterator<KeyType, ValueType> implements Iterator<[KeyType, ValueType]> {
     #private;
-    constructor(list: List<KeyType, ValueType>);
+    constructor(list: TS0List<KeyType, ValueType>);
     next(): IteratorResult<[KeyType, ValueType]>;
 }
 export {};
-//# sourceMappingURL=List.d.ts.map
