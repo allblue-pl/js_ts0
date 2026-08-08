@@ -1,9 +1,12 @@
-import ts0, { ts0NotSet, type TS0ValueType } from "./ts-lib/index.ts";
+import ts0, { type TS0AndType, TS0ArrayType, type TS0DefaultType_Info, type TS0EnumType, type TS0IterableType, type TS0MapType, TS0ObjectType, type TS0Preset, type TS0ValueType, type TS0ValueTypeType, TS0PresetArrayType } from "./ts-lib/index.ts";
+import { TS0PresetType, } from "./ts-lib/index.ts";
 import ts0Assert from "./ts-lib/ts0Assert.ts";
+import ts0Virtual from "./ts-lib/ts0Virtual.ts";
 import TS0AssertError from "./ts-lib/TS0AssertError.ts";
 import TS0List from "./ts-lib/TS0List.ts";
-import type { TS0RawArray, TS0RawObject } from "./ts-lib/ts-types.ts";
+import type { TS0NotSet, TS0RawArray, TS0RawObject, TS0RawValue, } from "./ts-lib/ts-types.ts";
+import ts0Helper from "./ts-lib/ts0Helper.ts";
 
 export default ts0;
-export type { TS0RawArray, TS0RawObject, TS0ValueType };
-export { ts0, ts0Assert, ts0NotSet, TS0AssertError, TS0List, };
+export type { TS0NotSet, TS0Preset, TS0RawArray, TS0RawObject, TS0RawValue, TS0ValueType };
+export { ts0, ts0Assert, ts0Helper, ts0Virtual, TS0ArrayType, TS0AssertError, TS0ObjectType, TS0PresetArrayType, TS0PresetType, TS0List, };

@@ -1,13 +1,12 @@
-import { types } from "node:util";
 import type { TS0RawArray, TS0RawObject } from "./ts-types.ts";
-import ts0 from "./index.ts";
+import ts0, { type TS0ValueType } from "./index.ts";
 
 export class ts0Helper_Class {
     constructor() {
         
     }
 
-    copyArray(arr: TS0RawArray): TS0RawArray {
+    copyRawArray(arr: TS0RawArray): TS0RawArray {
         let arr_New = new Array();
         for (let val of arr) {
             if (val === null) {
@@ -21,7 +20,7 @@ export class ts0Helper_Class {
             }
 
             if (Array.isArray(val)) {
-                arr_New.push(this.copyArray(val));
+                arr_New.push(this.copyRawArray(val));
                 continue;
             }
 
@@ -31,9 +30,7 @@ export class ts0Helper_Class {
         return arr_New;
     }
 
-    copyRawObject(obj: TS0RawObject): TS0RawObject {
-        ts0.assertType(obj, ts0.TRawObject);
-
+    copyRawObject<T extends TS0RawObject>(obj: T): T {
         let obj_New: TS0RawObject = {};
         for (let prop in obj) {
             if (obj[prop] === null) {
@@ -52,14 +49,14 @@ export class ts0Helper_Class {
             }
 
             if (Array.isArray(obj[prop])) {
-                obj_New[prop] = this.copyArray(obj[prop]);
+                obj_New[prop] = this.copyRawArray(obj[prop]);
                 continue;
             }
 
             obj_New[prop] = obj[prop];
         }
 
-        return obj_New;
+        return obj_New as T;
     }
 }
 const ts0Helper = new ts0Helper_Class();

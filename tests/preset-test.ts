@@ -1,13 +1,10 @@
-import ts0 from "../ts-lib/index.ts";
+// import ts0 from "../ts-lib/index.ts";
 
-let p = ts0.TArray(ts0.TPreset({
-    tsconfig: [ "string", ts0.TNull ],
-    libs: ts0.TObject("string", "string"),
-}));
+// let p0 = ts0.TPreset({
+//     a: [ "number", ts0.TDefault(5) ],
+// });
+// let p1 = ts0.TPreset({
+//     b: 
+// });
 
-ts0.assertType([
-    {
-        tsconfig: "test",
-        libs: [ "arr" ],
-    }
-], p);
+// console.log(ts0.assertType({}, p));

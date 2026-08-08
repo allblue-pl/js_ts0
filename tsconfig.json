@@ -6,6 +6,7 @@
         "emitDeclarationOnly": true,
         "erasableSyntaxOnly": true,
         "module": "nodenext",
+        "noImplicitOverride": true,
         "outDir": ".",
         "rewriteRelativeImportExtensions": true,
         "rootDir": ".",
