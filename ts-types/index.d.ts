@@ -1,5 +1,5 @@
-import ts0, { TS0ArrayType, TS0ObjectType, type TS0Preset, type TS0ValueType, TS0PresetArrayType } from "./ts-lib/index.ts";
-import { TS0PresetType } from "./ts-lib/index.ts";
+import ts0, { TS0ArrayType, TS0ObjectType, type TS0Preset, type TS0ValueType, TS0PresetArrayType } from "./ts-lib/ts0.ts";
+import { TS0PresetType } from "./ts-lib/ts0.ts";
 import ts0Assert from "./ts-lib/ts0Assert.ts";
 import ts0Virtual from "./ts-lib/ts0Virtual.ts";
 import TS0AssertError from "./ts-lib/TS0AssertError.ts";

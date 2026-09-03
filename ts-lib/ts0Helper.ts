@@ -1,5 +1,5 @@
 import type { TS0RawArray, TS0RawObject } from "./ts-types.ts";
-import ts0, { type TS0ValueType } from "./index.ts";
+import ts0, { type TS0ValueType } from "./ts0.ts";
 
 export class ts0Helper_Class {
     constructor() {

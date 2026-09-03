@@ -1,5 +1,5 @@
-import ts0, {                  TS0ArrayType,                                                                                    TS0ObjectType,                                                           TS0PresetArrayType } from "./lib/index.js";
-import { TS0PresetType, } from "./lib/index.js";
+import ts0, {                  TS0ArrayType,                                                                                    TS0ObjectType,                                                           TS0PresetArrayType } from "./lib/ts0.js";
+import { TS0PresetType, } from "./lib/ts0.js";
 import ts0Assert from "./lib/ts0Assert.js";
 import ts0Virtual from "./lib/ts0Virtual.js";
 import TS0AssertError from "./lib/TS0AssertError.js";
