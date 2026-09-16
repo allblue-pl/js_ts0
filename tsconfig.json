@@ -13,9 +13,10 @@
         "strict": true,
         "target": "esnext",
         "typeRoots": [
-            "./node_modules/@types"
+            "./node_modules/@types",
+            "../@types"
         ],
-        "types": ["node"],
+        "types": [],
         "useDefineForClassFields": true,
         "verbatimModuleSyntax": true
     },
