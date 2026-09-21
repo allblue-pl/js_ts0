@@ -6,3 +6,6 @@ export type TS0RawObject = {
     [key: string | number]: TS0RawValue;
 };
 export type TS0RawValue = boolean | null | number | string | TS0RawArray | TS0RawObject;
+export type TS0Required<T> = {
+    [K in keyof T]-?: TS0Required<T[K]>;
+};
